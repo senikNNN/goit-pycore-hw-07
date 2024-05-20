@@ -6,7 +6,7 @@ def handle_error(func):
             return func(*args, **kwargs)
         except ValueError:
             return "Invalid number of arguments entered!"
-        except KeyError: ### Можливо доведеться видалити
+        except KeyError: 
             return "Contact not found."
         except IncorrectPhoneExeption:
             return "Incorrect phone number entered"
